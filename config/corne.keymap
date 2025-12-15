@@ -60,7 +60,7 @@
 		combo_bslh {
 			timeout-ms = <50>;
 			key-position = <DOT FSLH>;
-			binding = <&BSLH>;
+			binding = <&kp BSLH>;
 		};
 		combo_grave {
 			timeout-ms = <50>;
