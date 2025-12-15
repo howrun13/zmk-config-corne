@@ -16,67 +16,68 @@
 			timeout-ms = <50>;
 			key-position = <R T>;
 			binding = <&kp LPAR>;
-		}
+		};
 
 		combo_lbkt {
 			timeout-ms = <50>;
 			key-position = <F G>;
 			binding = <&kp LBKT>;
-		}
+		};
 
 		combo_lbrc {
 			timeout-ms = <50>;
 			key-position = <V B>;
 			binding = <&kp LBRC>;
-		}
+		};
 
 		combo_rpar {
 		    	timeout-ms = <50>;
 		    	key-position = <Y U>;
 			binding = <&kp RPAR>;
-		}
+		};
 
 		combo_rbkt {
 			timeout-ms = <50>;
 			key-position = <H J>;
 			binding = <&kp RBKT>;
-		}
+		};
 
 		combo_rbrc {
 			timeout-ms = <50>;
 			key-position = <N M>;
 			binding = <&kp RBRC>;
-		}
+		};
 		combo_esc {
 			timeout-ms = <50>;
 			key-position = <J K>;
 			binding = <&kp ESC>;
-		}
+		};
 		combo_tilde {
 			timeout-ms = <50>;
 			key-position = <L SEMI>;
 			binding = <&kp TILDE>;
-		}
+		};
 		combo_bslh {
 			timeout-ms = <50>;
 			key-position = <DOT FSLH>;
 			binding = <&BSLH>;
-		}
+		};
 		combo_grave {
 			timeout-ms = <50>;
 			key-position = <SEMI SQT>;
 			binding = <&kp GRAVE>;
-		}
+		};
 		combo_pipe {
 			timeout-ms = <50>;
 			key-position = <FSLH RET>;
 			binding = <&kp PIPE>;
-		}
+		};
 		combo_laltbspc {
 			timeout-ms = <50>;
 			key position = <P BSPC>;
 			binding = <&kp LALT>, <&kp BSPC>;
-		}
+		};
+	};
 
 
 
@@ -103,7 +104,7 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB | BT1 | BT2 |  3  |  4  |  5  |   |  7  |  8  |  9  |  +  |     |      |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  4  |  5  |  6  |  -  |     |      |
-// | SHFT |     |     |     |     |     |   |  1  |  2  |  3  |  .  |     |   \  | 
+// | SHFT |     |     |     |     |     |   |  1  |  2  |  3  |  .  |     |   \  |
 //                    | GUI |     | SPC |   |     |  0  |     |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
