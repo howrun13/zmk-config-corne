@@ -27,72 +27,72 @@
 		combo_lpar {
 			timeout-ms = <50>;
 			key-positions = <4 5>;
-			binding = <&kp LPAR>;
+			bindings = <&kp LPAR>;
 		    };
 
 		combo_lbkt {
 			timeout-ms = <50>;
 			key-positions = <16 17>;
-			binding = <&kp LBKT>;
+			bindings = <&kp LBKT>;
 		    };
 
 		combo_lbrc {
 			timeout-ms = <50>;
 			key-positions = <28 29>;
-			binding = <&kp LBRC>;
+			bindings = <&kp LBRC>;
 		    };
 
 		combo_rpar {
 		    timeout-ms = <50>;
 		    key-positions = <6 7>;
-			binding = <&kp RPAR>;
+			bindings = <&kp RPAR>;
 		    };
 
 		combo_rbkt {
 			timeout-ms = <50>;
 			key-positions = <18 19>;
-			binding = <&kp RBKT>;
+			bindings = <&kp RBKT>;
 		    };
 
 		combo_rbrc {
 			timeout-ms = <50>;
 			key-positions = <30 31>;
-			binding = <&kp RBRC>;
+			bindings = <&kp RBRC>;
 	    	};
 
 		combo_esc {
 			timeout-ms = <50>;
 			key-positions = <19 20>;
-			binding = <&kp ESC>;
+			bindings = <&kp ESC>;
 		    };
 
 		combo_tilde {
 			timeout-ms = <50>;
 			key-positions = <21 22>;
-			binding = <&kp TILDE>;
+			bindings = <&kp TILDE>;
 		    };
 
 		combo_bslh {
 			timeout-ms = <50>;
 			key-positions = <33 34>;
-			binding = <&kp BSLH>;
+			bindings = <&kp BSLH>;
 		    };
 
 		combo_grave {
 			timeout-ms = <50>;
 			key-positions = <22 23>;
-			binding = <&kp GRAVE>;
+			bindings = <&kp GRAVE>;
 		    };
 
 		combo_pipe {
 			timeout-ms = <50>;
 			key-positions = <34 35>;
-			binding = <&kp PIPE>;
+			bindings = <&kp PIPE>;
 		    };
 		combo_lalt_bspc {
 		    timeout-ms = <50>;
 			key-positions = <11 12>;
-			binding = <&lalt_bspc>;
+			bindings = <&lalt_bspc>;
 			};
     	};
 
