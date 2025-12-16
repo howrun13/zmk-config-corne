@@ -81,12 +81,11 @@
 
 
 
-{
-        keymap {
-                compatible = "zmk,keymap";
+ keymap {
+      compatible = "zmk,keymap";
 
-                default_layer {
-                        display-name = "Def Layer";
+            default_layer {
+                    display-name = "Def Layer";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
