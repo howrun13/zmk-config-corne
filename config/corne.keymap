@@ -72,11 +72,6 @@
 			key-positions = <34 35>;
 			binding = <&kp PIPE>;
 		};
-		#combo_laltbspc {
-			#timeout-ms = <50>;
-			#key-positions = <9 11>;
-			#binding = <&kp LALT kpBSPC>;
-		#};
 	};
 
 
