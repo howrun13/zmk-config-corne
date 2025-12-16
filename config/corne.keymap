@@ -75,7 +75,7 @@
 		combo_laltbspc {
 			timeout-ms = <50>;
 			key-positions = <9 11>;
-			binding = <&kp LALT+BSPC>;
+			binding = <&kp LALT BSPC>;
 		};
 	};
 
