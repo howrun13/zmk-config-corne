@@ -22,9 +22,9 @@
 
 /  {
 
-    macros {
+    behaviors {
         lalt_bspc: lalt_bspc {
-            compatible = "zmk, behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
                 &macro_press &kp LALT
