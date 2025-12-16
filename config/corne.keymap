@@ -31,8 +31,8 @@
 		};
 
 		combo_rpar {
-		    	timeout-ms = <50>;
-		    	key-position = <Y U>;
+		    timeout-ms = <50>;
+		    key-position = <Y U>;
 			binding = <&kp RPAR>;
 		};
 
@@ -81,7 +81,7 @@
 
 
 
-/ {
+{
         keymap {
                 compatible = "zmk,keymap";
 
