@@ -54,13 +54,13 @@
     			tapping-term-ms = <200>;
     			bindings = <&kp N4>, <&kp N5>;
 		};
-		tog_on: toggle_layer_on_only {
+		togon: toggle_layer_on_only {
             		compatible = "zmk,behavior-toggle-layer";
             		#binding-cells = <1>;
             		display-name = "Toggle Layer On";
             		toggle-mode = "on";
         	};
-		tog_off: toggle_layer_off_only {
+		togoff: toggle_layer_off_only {
             		compatible = "zmk,behavior-toggle-layer";
             		#binding-cells = <1>;
             		display-name = "Toggle Layer On";
@@ -155,7 +155,7 @@
 		combo_gameLayer {
 		    timeout-ms = <50>;
 			key-positions = <23 12>;
-			bindings = <&tog _on GAME>;
+			bindings = <&tog on GAME>;
     	    };
      };
 
