@@ -20,6 +20,7 @@
 #define NAVIGATION   2
 #define MEDIA 3
 #define GAME 4
+#define GAMEF 5
 
 
 /  {
@@ -40,11 +41,11 @@
 			tapping-term-ms = <200>;
 			bindings = <&kp HOME >, <&kp END>;
 		};
-		td1: tap_dance_3_1 {
+		td1: tap_dance1{
 			compatible = "zmk, behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
-			bindings = <&kp N3>, <&kp N2>;
+			bindings = <&kp>, <&kp>;
 		};
 		tog_on: toggle_layer_on_only {
             		compatible = "zmk,behavior-toggle-layer";
@@ -154,6 +155,7 @@
 			key-positions = <23 12>;
 			bindings - <&tog  4>;
     	};
+     };
 
       keymap {
                 compatible = "zmk,keymap";
@@ -219,15 +221,29 @@
 		game_layer {
                         display-name = "Game Layer";
 // -----------------------------------------------------------------------------------------
-// | F1 |  1  |  Q  |  W  |  E   |   R   |    	 |  F6  |  F7  |  F8 | F9  | F10  |   F11   |
-// | F2 | td1 |  A  |  S  |  D   |   F   |   	 | MUTE | VOL+ | VOL-|     |      |   F12   |
-// |    | 4\5 |  Z  |  X  |  C   |   V   |   	 | MPLAY| MPRV | MNXT| MSTP|      | zmk boot|
-//               |     | LCTL | SPACE |          |     |     |     |
+// | G |  tab |  Q  |  W  |  E   |   R   |    	|   |          |    Up   |                |      |   Tab   |
+// | 3\1| shift|  A  |  S  |  D   |   F   |   	|   | Left | Down | Right     |      |  Shift   |
+// | 5\4 | cltl |  Z  |  X  |  C   |   V   |   	   |   |        |              |                |      | rctl |
+//     | LALT | SPACE | gm func  |          | 1  | space   | Pr.Scr  |
                         bindings = <
-   &kp F1 &kp N1  &kp Q  &kp W  &kp E  &kp R       &trans  &trans   &trans   &trans    &trans    &trans
-   &kp F2 &td1    &kp A  &kp S  &kp D  &kp F       &trans  &trans   &trans   &trans &trans &trans
-   &kp    &mt 5 4 &kp Z  &kp X  &kp C  &mt B V     &trans  &trans   &trans   &trans    &trans &sys_reset
-                   &trans &kp LCTL &kp SPACE       &trans   &trans    &trans
+   &kp G &kp TAB  &kp Q  &kp W  &kp E  &kp R                   &none  &none   &kp UP   &none    &none    &kp TAB
+   &td N3 N1 &kp LSHIFT  &kp A  &kp S  &kp D  &kp F      &none  &kp LEFT   &kp DOWN &kp RIGHT &none &kp RSHIFT
+   &td N5 N4 &kp LCTL  &kp Z  &kp X  &kp C  &mt B V       &none  &none   &none   &none    &kp RALT &kp RCTL
+                   &kp LALT &kp SPACE &mo 5                                 &to 1  &kp SPACE    &kp PSCRN
+                        >;
+                };
+        game_func_layer {
+                        display-name = "Game Func Layer";
+// -----------------------------------------------------------------------------------------
+// |    |  1 |  2  |  3  |  4   |   5   |    	|   |bt 0|bt 1|bt2|bt3| bt4   |
+// |    | 0  |  6  |  7  |  8   |   9   |   	|   |        |       |       |      |          |
+// |     | G |  J  |  I  |  M   |   T   |   	|   |        |       |       |      |  rctl  |
+//     | ESC | ENTER | gmfnc  |          | 1  | space   | Pr.Scr  |
+                        bindings = <
+   &none &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &none  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4
+   &none &kp N0  &kp N6  &kp N7  &kp N8  &kp N9      &none  &none  &none &none &none &none
+   &none &kp G  &kp J  &kp I  &kp M  &kp T                     &none  &none   &none   &none    &sys_reset &bootloader
+                   &kp ESC &kp RET &trans                                &trans  &trans    &trans
                         >;
                 };
         };
