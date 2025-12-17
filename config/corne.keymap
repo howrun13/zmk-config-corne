@@ -230,8 +230,8 @@
 //     | LALT | SPACE | gm func  |          | 1  | space   | Pr.Scr  |
                         bindings = <
    &kp G &kp TAB  &kp Q  &kp W  &kp E  &kp R                   &none  &none   &kp UP   &none    &none    &kp TAB
-   &td N3 N1 &kp LSHIFT  &kp A  &kp S  &kp D  &kp F      &none  &kp LEFT   &kp DOWN &kp RIGHT &none &kp RSHIFT
-   &td N5 N4 &kp LCTL  &kp Z  &kp X  &kp C  &mt B V       &none  &none   &none   &none    &kp RALT &kp RCTL
+   &td1 N3 N1 &kp LSHIFT  &kp A  &kp S  &kp D  &kp F      &none  &kp LEFT   &kp DOWN &kp RIGHT &none &kp RSHIFT
+   &td1 N5 N4 &kp LCTL  &kp Z  &kp X  &kp C  &mt B V       &none  &none   &none   &none    &kp RALT &kp RCTL
                    &kp LALT &kp SPACE &mo 5                                 &to 1  &kp SPACE    &kp PSCRN
                         >;
                 };
