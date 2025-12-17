@@ -36,13 +36,7 @@
                 &macro_release &kp LALT
                 >;
             };
-        td0: tap_dance_home_end {
-			compatible = "zmk, behavior-tap-dance";
-			#binding-cells = <0>;
-			tapping-term-ms = <200>;
-			bindings = <&kp>, <&kp>;
-		};
-		td1: tap_dance1{
+      	td1: tap_dance1{
 			compatible = "zmk, behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <200>;
@@ -197,12 +191,12 @@
                     display-name = "Navigation Layer";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  Ctl+Sft+TAB  |  Ctl+TAB  |  Gui+LEFT  |  Gui+RGHT  |         | DEL |
-// | CTRL |     | game on | game off |     |     |   |      LEFT     |    DOWN   |      UP    |    RGHT    |         |  td0 Home End  |
+// | CTRL |     | game on | game off |     |     |   |      LEFT     |    DOWN   |      UP    |    RGHT    |         |  td1 Home End  |
 // | SHFT |     |     |     |     |     |   |    MS LEFT    |  MS DOWN  |    MS UP   |   MS RGTH  | MS BTN1 |  MS BTN2   |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp DEL
-   &kp LCTRL &trans   &tog_on 4  &tog_off 4 &trans   &trans      &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans &td0 HOME END
+   &kp LCTRL &trans   &tog_on 4  &tog_off 4 &trans   &trans      &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans &td1 HOME END
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT &mkp MB1 &mkp MB2
                              &trans &trans   &trans        &trans   &trans    &trans
                         >;
