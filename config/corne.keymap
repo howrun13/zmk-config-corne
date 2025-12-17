@@ -155,7 +155,7 @@
 		combo_gameLayer {
 		    timeout-ms = <50>;
 			key-positions = <23 12>;
-			bindings - <&tog  4>;
+			bindings = <&tog  4>;
     	    };
      };
 
