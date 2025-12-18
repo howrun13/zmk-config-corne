@@ -35,7 +35,13 @@
                 &macro_tap &kp BSPC
                 &macro_release &kp LALT
                 >;
-            };
+        };
+        v_b_morph: v_b_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI)>;
+            bindings = <&kp B>, <&kp V>;
+         };
       	td0: tap_dance_home_end{
     			compatible = "zmk,behavior-tap-dance";
     			#binding-cells = <0>;
@@ -230,7 +236,7 @@
                         bindings = <
    &kp G &kp TAB  &kp Q  &kp W  &kp E  &kp R                   &none  &none   &kp UP   &none    &none    &kp TAB
    &td1 &kp LSHIFT  &kp A  &kp S  &kp D  &kp F      &none  &kp LEFT   &kp DOWN &kp RIGHT &none &kp RSHIFT
-   &td2 &kp LCTL  &kp Z  &kp X  &kp C  &mt B V       &none  &none   &none   &none    &kp RALT &kp RCTL
+   &td2 &kp LCTL  &kp Z  &kp X  &kp C  &v_b_morph      &none  &none   &none   &none    &kp RALT &kp RCTL
                    &kp LALT &kp SPACE &lt GAMEF                                &to DEFAULT  &kp SPACE    &kp PSCRN
                         >;
                 };
