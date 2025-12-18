@@ -237,7 +237,7 @@
    &kp G &kp TAB  &kp Q  &kp W  &kp E  &kp R                   &none  &none   &kp UP   &none    &none    &kp TAB
    &td1 &kp LSHIFT  &kp A  &kp S  &kp D  &kp F      &none  &kp LEFT   &kp DOWN &kp RIGHT &none &kp RSHIFT
    &td2 &kp LCTL  &kp Z  &kp X  &kp C  &v_b_morph      &none  &none   &none   &none    &kp RALT &kp RCTL
-                   &kp LALT &kp SPACE &lt GAMEF                                &to DEFAULT  &kp SPACE    &kp PSCRN
+                   &kp LALT &kp SPACE &mo GAMEF                                &to DEFAULT  &kp SPACE    &kp PSCRN
                         >;
                 };
         game_func_layer {
