@@ -37,19 +37,19 @@
                 >;
             };
       	td0: tap_dance_home_end{
-    			compatible = "zmk, behavior-tap-dance";
+    			compatible = "zmk,behavior-tap-dance";
     			#binding-cells = <0>;
     			tapping-term-ms = <200>;
     			bindings = <&kp HOME>, <&kp END>;
 		};
 		td1: tap_dance_3_1{
-    			compatible = "zmk, behavior-tap-dance";
+    			compatible = "zmk,behavior-tap-dance";
     			#binding-cells = <0>;
     			tapping-term-ms = <200>;
     			bindings = <&kp N3>, <&kp N1>;
 		};
 		td2: tap_dance_4_5{
-    			compatible = "zmk, behavior-tap-dance";
+    			compatible = "zmk,behavior-tap-dance";
     			#binding-cells = <0>;
     			tapping-term-ms = <200>;
     			bindings = <&kp N4>, <&kp N5>;
@@ -196,7 +196,7 @@
                     display-name = "Navigation Layer";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  Ctl+Sft+TAB  |  Ctl+TAB  |  Gui+LEFT  |  Gui+RGHT  |         | DEL |
-// | CTRL |     | game on | game off |     |     |   |      LEFT     |    DOWN   |      UP    |    RGHT    |         |  td1 Home End  |
+// | CTRL |     | game on | game off |     |     |   |      LEFT     |    DOWN   |      UP    |    RGHT    |         |  td0 Home End  |
 // | SHFT |     |     |     |     |     |   |    MS LEFT    |  MS DOWN  |    MS UP   |   MS RGTH  | MS BTN1 |  MS BTN2   |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
